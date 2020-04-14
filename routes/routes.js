@@ -26,7 +26,7 @@ router.post('/xml', (req, res) => {
 });
 
 router.get('/logs', (req, res) => {
-  fs.readFile('./logs/response-time.log', (err, logs) => {
+  fs.readFile('./logs/response-time-log.txt', (err, logs) => {
     res.type('text');
     res.send(logs);
   });
