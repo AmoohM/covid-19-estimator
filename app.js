@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const estimateRoutes = require('./routes/routes');
-const ResponseTimeLogger = require('./logs/res-time-logger');
+const ResponseTimeLogger = require('./responseLogs/response-time-log.txt');
 
 const app = express();
 
